@@ -24,16 +24,16 @@ For a deeper understanding of our work, please refer to our academic page: _[Com
 
 ## Code Repositories
 - **Track 2 (Image-to-Image Retrieval):** [https://github.com/voicon324/ENTChallenge](https://github.com/voicon324/ENTChallenge)  
-- **Track 3:** [https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge](https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge)  
+- **Track 3: (Text-to-Image Retrieval** [https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge](https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge)  
 
 ---
 
 ## Citation
 If you find our work useful, please cite:
 ```bibtex
-@inproceedings{yourpaper2025,
+@inproceedings{entrep-khoatran2025,
   title={Enhancing Endoscopic Image Retrieval via Self-Supervised Learning and Large VLM-Based Re-ranking},
-  author={Your Name and Others},
-  booktitle={Proceedings of the ACM Multimedia},
+  author={Khoa Tran, Linh Ly, Duy Khanh Ho, Ngoc Hoang Luong},
+  <!-- booktitle={Proceedings of the ACM Multimedia}, -->
   year={2025}
 }
