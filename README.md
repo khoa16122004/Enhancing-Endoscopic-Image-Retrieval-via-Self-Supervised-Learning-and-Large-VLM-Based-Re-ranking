@@ -11,8 +11,9 @@ This repository contains the implementation of our project and research method f
 ## Overview
 Our work aims to:
 - Enhance understanding and analysis of endoscopic images for retrieval tasks.
-- Explore the capabilities of **Large Vision-Language Models (VLMs)** in understanding and re-ranking retrieval results.
-- Combine **self-supervised learning** with **VLM-based re-ranking** to achieve state-of-the-art performance.
+- Explore the capabilities of **Large Vision-Language Models (VLMs)** in understanding endoscopic images and re-ranking retrieval results.
+- Combine **self-supervised learning** with **VLM-based re-ranking** to enhance the performance of Endoscopic Image Retrieval.
+
 
 ## Achievements
 🏆 **ENTRep Challenge @ ACM Multimedia 2025**
