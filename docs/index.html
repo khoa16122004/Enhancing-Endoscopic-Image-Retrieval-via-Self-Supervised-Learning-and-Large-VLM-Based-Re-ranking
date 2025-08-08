@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Enhancing Endoscopic Image Retrieval via Self-Supervised Learning and Large VLM-Based Re-ranking</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Enhancing Endoscopic Image Retrieval via Self-Supervised Learning and Large VLM-Based Re-ranking
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/khoa16122004" target="_blank">Khoa Tran</a><sup>(1)</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/Ly-Lynn" target="_blank">Linh Ly</a><sup>(1)</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/voicon324" target="_blank">Duy Khanh Ho</a><sup>(2)</sup>,
+            </span>
+            <span class="author-block">
+              <a>Ngoc Hoang Luong</a><sup>(1)</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">(1) University of Information Technology - VNUHCM</span><br>
+            <span class="author-block">(2) University of Science - VNUHCM</span><br>
+            <span class="author-block"><em>Both are members of Vietnam National University Ho Chi Minh City (VNUHCM)</em></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code (Track 2)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/voicon324/ENTChallenge" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code (Track 3)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+
+            <!-- Achievements -->
+            <div style="margin-top: 10px;">
+              <span class="tag is-warning is-medium">🏆 Top-2 Track 3 (Text-to-Image retrieval)</span>
+              <span class="tag is-info is-medium">🏅 Top-5 Track 2 (Image-to-Image retrieval)</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+    <img id="tree" src="static/img/rerank_result.png" alt="Overview" style="max-height: 200%;">      <h2 class="subtitle">
+        <p>
+          <strong style="color:green;">Illustration of the proposed LDSF re-ranking results:</strong>  
+          The first row shows the original retrieval similarity scores from the baseline retrieval method.  
+          The second row presents the re-ranked results using our <strong>LDSF</strong> approach with Gemini 2.5 Pro, along with their updated similarity scores.  
+          The re-ranking is applied to the top-<em>k</em>=10 retrieved items, and the figure displays the top-5 highest-ranked results after re-ranking.  
+          <span style="color:green;">Green borders</span> indicate the ground-truth image(s) for the given query,  
+          while <span style="color:red;">red borders</span> denote incorrect or irrelevant retrievals.
+        </p>
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Medical image retrieval is essential for clinical diagnosis and medical education, yet remains highly challenging in endoscopic imaging due to limited annotated data, the lack of domain-specific pretrained models, and subtle visual similarities across anatomical regions.
+            In this work, we utilize self-supervised contrastive learning to pretrain a strong image encoder tailored for endoscopic data, which serves as the backbone for downstream retrieval tasks. For text-to-image retrieval, we adopt a multi-modal contrastive learning approach that aligns textual and visual representations based on this pretrained backbone.
+            To further enhance retrieval performance, we propose a novel re-ranking module that leverages the reasoning capabilities of large vision-language models (LVLMs), such as GPT-4o and Gemini.
+            We also provide a comparative analysis of various retrieval strategies, offering insights into their effectiveness in clinical scenarios.
+            Our method achieves top-2 in text-to-image and top-5 in image-to-image retrieval at the ENTRep Challenge 2025, demonstrating its potential value for endoscopic image retrieval.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+
+<section class="section has-background-light">
+  <div class="container">
+    <h1 class="title has-text-centered">Experimental Results</h1>
+
+
+    <!-- Result Image 1 -->
+    <div class="box has-text-centered mb-5">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <img src="static/img/results_challenge.png" alt="Result A" style="max-width: 100%; height: 380px;">
+          <p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
+            <strong>Table 1:</strong> Comparison of team performances on image-to-image (Track 2) 
+            and text-to-image retrieval (Track 3) tasks of the final round (private test) in the ENTRep Challenge. 
+            Our team, <span style="font-weight:bold;">ELO</span>, is highlighted in bold.
+          </p>
+        </div>
+        <div class="column is-6">
+          <img src="static/img/result_exp.png" alt="Result B" style="max-width: 100%; height: auto;">
+          <p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; margin-top: 8px;">
+            <strong>Table 2:</strong> Supplemental Study on the split test set of the training set of the ENTRep Challenge.
+            We report HitRate@top-<em>k</em> ↑ and MRR@top-<em>k</em> ↑ for the Image-to-Image and Text-to-Image Retrieval tasks 
+            using different approaches: Without Fine-tuning, SSL Fine-tuning, and Multi-modal Fine-tuning.  
+            Each cell shows: <span style="color:purple;"><em>HitRate</em></span> — 
+            <span style="color:blue;"><em>MRR</em></span>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Image 2 -->
+    <div class="box has-text-centered mb-5">
+      <img src="static/img/pca.png" alt="Experiment Result 2" style="max-width: 100%; height: auto;">
+      <p class="mt-4">
+        <strong>Figure 1:</strong> Visualization of feature representations using PCA projection with three components on three classes of four images. The first PCA component is used to filter out background variations. Each group illustrates the comparison between original endoscopic images (left), the PCA-projected features extracted from a pretrained DINOv2 backbone without domain-specific training (middle), and the features from the same backbone after fine-tuning on the medical dataset (right).
+      </p>
+    </div>
+    <div class="box has-text-centered mb-5">
+      <img src="static/img/compare_t2i_reranking.png" alt="Experiment Result 2" style="max-width: 100%; height: auto;">
+      <p class="mt-4">
+        <strong>Figure 2:</strong> Comparison between standard inference (Original) and LDSF (Reranked) across three DINO-based models on a 100-sample subset from the text-to-image retrieval test set. The reranking approach consistently improves both Hit Rate and Mean Reciprocal Rank (MRR) metrics, with the most significant gains observed at higher Top-k values.
+      </p>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container">
+    <h1 class="title has-text-centered">Method Overview</h1>
+    <div class="content">
+      <p>
+        Our approach combines self-supervised learning, multimodal contrastive learning, 
+        and LVLM-based re-ranking to boost image-to-image and text-to-image retrieval in the ENTRep Challenge.
+      </p>
+
+      <h3>1. Self-Supervised Image Encoder</h3>
+      <p>
+        We train an image encoder \(f_\phi\) for endoscopic images using a SimCLR-inspired self-supervised contrastive learning strategy. 
+        Each original image is augmented twice to create a positive pair \((x, x^+)\), while all other augmented samples act as negatives \(x^-\). 
+        With temperature parameter \(\tau\), the InfoNCE loss is:
+      </p>
+      <p>
+      \[
+      \mathcal{L}_x = - \log \frac{\exp( sim(z_x, z_{x^+}) / \tau )}
+      {\exp( sim(z_x, z_{x^+}) / \tau ) + \sum_{z_{x^-}} \exp( sim(z_x, z_{x^-}) / \tau )}
+      \]
+      \[
+      \mathcal{L} = \frac{1}{2B} \sum_{x} \mathcal{L}_x
+      \]
+      </p>
+
+      <h3>2. Multimodal Contrastive Learning</h3>
+      <p>
+        The pretrained image encoder \(f_\phi\) is fine-tuned jointly with a text encoder \(f_\theta\) for cross-modal alignment. 
+        Given matched image–text pairs \((x, q)\) and their negatives \((x^-, q^-)\), the losses are:
+      </p>
+      <p>
+      \[
+      \mathcal{D}_{x,q} = - \log \frac{\exp( sim(z_q, z_x)/\tau )}
+      {\exp( sim(z_q, z_x)/\tau ) + \sum_{z_{x^-}} \exp( sim(z_q, z_{x^-})/\tau )}
+      \]
+      \[
+      \mathcal{H}_{x,q} = - \log \frac{\exp( sim(z_x, z_q)/\tau )}
+      {\exp( sim(z_x, z_q)/\tau ) + \sum_{z_{q^-}} \exp( sim(z_x, z_{q^-})/\tau )}
+      \]
+      \[
+      \mathcal{L} = \frac{1}{2B} \sum_{(x,q)} \left( \mathcal{D}_{x,q} + \mathcal{H}_{x,q} \right)
+      \]
+      </p>
+
+      <h3>3. LVLM-based Dual-Score Fusion (LDSF) Re-ranking</h3>
+      <p>
+        To address the similarity of clinical descriptions and improve text-to-image retrieval, we introduce LDSF re-ranking. 
+        The system first retrieves top-\(k\) candidates using cosine similarity \(s_{\text{init}}\), then an LVLM (e.g., Gemini 2.5 Pro) estimates semantic relevance \(s_{\text{LVLM}}\). 
+        The final score is:
+      </p>
+      <p>
+        \[
+        s_{\text{final}}(z_q, z_x) = \frac{1}{2} \left[ s_{\text{init}}(z_q, z_x) + s_{\text{LVLM}}(z_q, z_x) \right]
+        \]
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code id="bibtex">@inproceedings{KhoaLinhGecco2025,
+  author       = {Khoa Tran, Linh Ly and Ngoc Hoang Luong},
+  title        = {{Evolutionary Black-box Patch Attacks on Face Verification}},
+  booktitle    = {GECCO '25 Companion: Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+  address      = {Málaga, Spain},
+  publisher    = {{ACM}},
+  year         = {2025}
+}</code></pre>
+  </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+       <p>
+        Template adapted from <a href="https://nerfies.github.io">Nerfies</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+      </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
