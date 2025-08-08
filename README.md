@@ -20,8 +20,6 @@ Our work aims to:
 - **Top-2** in **Track 3** (Image-to-Text Retrieval)  
 - **Top-5** in **Track 2** (Image-to-Image Retrieval)  
 
-## Official Academic Page
-For a deeper understanding of our work, please refer to our academic page: _[Coming Soon]_  
 
 ## Code Repositories
 - **Track 2 (Image-to-Image Retrieval):** [https://github.com/voicon324/ENTChallenge](https://github.com/voicon324/ENTChallenge)  
