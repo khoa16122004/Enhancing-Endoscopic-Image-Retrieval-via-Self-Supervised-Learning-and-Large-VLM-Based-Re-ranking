@@ -1,7 +1,8 @@
 # Enhancing Endoscopic Image Retrieval via Self-Supervised Learning and Large VLM-Based Re-ranking
 
-![Challenge](https://img.shields.io/badge/ENTRep%20Challenge-Track%203-blue)
-![Ranking](https://img.shields.io/badge/Ranking-Top%202-yellow)
+![Challenge](https://img.shields.io/badge/ENTRep%20Challenge-Track%202%20%26%203-blue)
+![Track 2 Ranking](https://img.shields.io/badge/Track%202-Top%205-yellow)
+![Track 3 Ranking](https://img.shields.io/badge/Track%203-Top%202-yellowgreen)
 ![Conference](https://img.shields.io/badge/ACM%20MM%202025-Grand%20Challenge-red)
 
 This repository contains the implementation of our project and research method for **Endoscopic Image Retrieval**, focusing on improving retrieval performance in the challenging medical imaging domain.  
