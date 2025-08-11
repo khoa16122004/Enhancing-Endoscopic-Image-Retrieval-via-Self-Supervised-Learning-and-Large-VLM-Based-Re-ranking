@@ -1,3 +1,6 @@
 [submodule "Track-3"]
 	path = Track-3
 	url = https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge.git
+[submodule "Track-2"]
+	path = Track-2
+	url = https://github.com/voicon324/ENTChallenge.git
