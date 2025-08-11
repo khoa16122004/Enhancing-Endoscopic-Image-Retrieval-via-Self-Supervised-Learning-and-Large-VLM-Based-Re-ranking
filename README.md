@@ -5,7 +5,7 @@
 ![Track 3 Ranking](https://img.shields.io/badge/Track%203-Top%202-yellowgreen)
 ![Conference](https://img.shields.io/badge/ACM%20MM%202025-Grand%20Challenge-red)
 
-This repository contains the implementation of our project and research method for **Endoscopic Image Retrieval**, focusing on improving retrieval performance in the challenging medical imaging domain.  
+This repository provides the implementation of our accepted paper at the **ACM Multimedia 2025 Workshop on Advancing Vision and Language AI for ENT Endoscopic Analysis** on Endoscopic Image Retrieval, aiming to enhance retrieval performance in the challenging field of medical imaging.
 
 📌 **Team ELO** — proudly representing **ELO Lab**.
 
