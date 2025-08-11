@@ -9,6 +9,7 @@ This repository provides the implementation of our accepted paper at the **ACM M
 
 📌 **Team ELO** — proudly representing **ELO Lab**.
 
+
 ## Overview
 Our work aims to:
 - Enhance understanding and analysis of endoscopic images for retrieval tasks.
@@ -20,11 +21,7 @@ Our work aims to:
 🏆 **ENTRep Challenge @ ACM Multimedia 2025**
 - **Top-2** in **Track 3** (Image-to-Text Retrieval)  
 - **Top-5** in **Track 2** (Image-to-Image Retrieval)  
-
-
-## Code Repositories
-- **Track 2 (Image-to-Image Retrieval):** [https://github.com/voicon324/ENTChallenge](https://github.com/voicon324/ENTChallenge)  
-- **Track 3: (Text-to-Image Retrieval** [https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge](https://github.com/Ly-Lynn/Track-3-ENTRep-Challenge)  
+ 
 
 ---
 
