@@ -31,5 +31,6 @@ If you find our work useful, please cite:
 @inproceedings{khoalinhduy-entrep2025,
   title={Enhancing Endoscopic Image Retrieval via Self-Supervised Learning and Large VLM-Based Re-ranking},
   author={Khoa Tran, Linh Ly, Duy Khanh Ho, Ngoc Hoang Luong},
+  booktitle={ACM Multimedia (MM) 2025}
   year={2025}
 }
