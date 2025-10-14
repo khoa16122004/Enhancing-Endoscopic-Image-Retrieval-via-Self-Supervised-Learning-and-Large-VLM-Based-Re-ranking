@@ -5,7 +5,7 @@
 ![Track 3 Ranking](https://img.shields.io/badge/Track%203-Top%202-yellowgreen)
 ![Conference](https://img.shields.io/badge/ACM%20MM%202025-Grand%20Challenge-red)
 
-This repository provides the implementation of our accepted paper at the **ACM Multimedia 2025 Workshop on Advancing Vision and Language AI for ENT Endoscopic Analysis**, aiming to enhance retrieval performance in the challenging field of medical imaging.
+This repository provides the implementation of our accepted paper at the **ACM Multimedia 2025 on Advancing Vision and Language AI for ENT Endoscopic Analysis**, aiming to enhance retrieval performance in the challenging field of medical imaging.
 
 📌 **Team ELO** — proudly representing **ELO Lab**.
 
